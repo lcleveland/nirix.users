@@ -1,11 +1,10 @@
-{ config, home-manager, inputs, lib, pkgs, ... }:
+{ config, home-manager, lib, pkgs, ... }:
 let
   user = config.nirix.users.lcleveland.settings;
 in
 {
   config = lib.mkIf user.enable {
     home-manager.users.lcleveland = {
-      imports = [ inputs.niri.homeModules.niri ];
       home = {
         stateVersion = user.state_version;
         username = user.username;
