@@ -12,12 +12,12 @@
   inputs = {
     nixvim = {
       url = "github:nix-community/nixvim?ref=nixos-25.05";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     zen_browser = {
       url = "github:0xc000022070/zen-browser-flake";
     };
   };
 }
+
 
 
