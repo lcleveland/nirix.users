@@ -10,6 +10,9 @@
       nixosModules.default = users;
     };
   inputs = {
+    home_manager = {
+      url = "github:nix-community/home-manager";
+    };
     nixvim = {
       url = "github:nix-community/nixvim?ref=nixos-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,5 +22,7 @@
     };
   };
 }
+
+
 
 
