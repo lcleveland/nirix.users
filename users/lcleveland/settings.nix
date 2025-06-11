@@ -5,7 +5,7 @@ in
 {
   config = lib.mkIf user.enable {
     home-manager.users.lcleveland.home = {
-      # stateVersion = user.state_version;
+      stateVersion = user.state_version;
       username = user.username;
     };
     nirix.system.keyboard.variant = "colemak_dh";
