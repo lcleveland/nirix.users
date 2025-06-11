@@ -23,7 +23,7 @@
     };
     state_version = lib.mkOption {
       type = lib.types.str;
-      default = "25.05";
+      default = "25.11";
       description = "State version";
     };
     username = lib.mkOption {
