@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-  options.nirix.users.lclevland.settings = {
+  options.nirix.users.lcleveland.settings = {
     groups = lib.mkOption {
       type = lib.types.listOf lib.types.str;
       default = [ "wheel" "networkmanager" ];
