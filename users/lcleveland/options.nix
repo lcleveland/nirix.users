@@ -21,6 +21,11 @@
       default = "Lyle Cleveland";
       description = "Name";
     };
+    state_version = lib.mkOption {
+      type = lib.types.str;
+      default = "25.05";
+      description = "State version";
+    };
     username = lib.mkOption {
       type = lib.types.str;
       default = "lcleveland";
