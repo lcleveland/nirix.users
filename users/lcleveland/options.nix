@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 {
   options.nirix.users.lcleveland.settings = {
+    enable = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "Enable";
+    };
     groups = lib.mkOption {
       type = lib.types.listOf lib.types.str;
       default = [ "wheel" "networkmanager" ];
