@@ -10,13 +10,13 @@ in
         stateVersion = user.state_version;
         username = user.username;
       };
-      nirix.system.keyboard.variant = "colemak_dh";
-      users.users.lcleveland = {
-        description = user.name;
-        extraGroups = user.groups;
-        isNormalUser = user.is_normal_user;
-        isSystemUser = !user.is_normal_user;
-      };
+    };
+    nirix.system.keyboard.variant = "colemak_dh";
+    users.users.lcleveland = {
+      description = user.name;
+      extraGroups = user.groups;
+      isNormalUser = user.is_normal_user;
+      isSystemUser = !user.is_normal_user;
     };
   };
 }
