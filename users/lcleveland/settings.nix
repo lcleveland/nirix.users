@@ -1,4 +1,4 @@
-{ config, home-manager, lib, pkgs, ... }:
+{ config, home-manager, lib, niri, pkgs, ... }:
 let
   user = config.nirix.users.lcleveland.settings;
 in
