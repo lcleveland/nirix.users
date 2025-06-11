@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 let
-  user = config.users.users.lcleveland.settings;
+  user = config.nirix.users.lcleveland.settings;
 in
 {
   config = lib.mkIf user.enable {
