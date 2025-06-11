@@ -8,7 +8,7 @@ in
       stateVersion = user.state_version;
       username = user.username;
     };
-    system.keyboard.keymap.variant = "colemak_dh";
+    nirix.system.keyboard.variant = "colemak_dh";
     users.users.lcleveland = {
       description = user.name;
       extraGroups = user.groups;
