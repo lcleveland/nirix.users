@@ -3,10 +3,7 @@
   outputs = { self, niri, nixpkgs, nixvim, zen_browser }@inputs:
     let
       import_modules = import ./resources/nix/import_modules.nix;
-      users = import_modules ./users ++
-        [
-          niri.nixosModules.niri
-        ];
+      users = import_modules ./users;
     in
     {
       inputs = inputs;
