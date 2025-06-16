@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 {
   options.nirix.users.lcleveland.settings = {
+    email = lib.mkOption {
+      type = lib.types.str;
+      default = "lyle.cleveland@proton.me";
+      description = "Email";
+    };
     enable = lib.mkOption {
       type = lib.types.bool;
       default = true;
