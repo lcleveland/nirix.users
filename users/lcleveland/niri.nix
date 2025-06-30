@@ -11,7 +11,7 @@
       "Lenovo Group Limited LEN T24i-10 VNA4B1P6" = {
         position = {
           x = -1920;
-          y = 1080;
+          y = -1080;
         };
         transform.rotation = 180;
       };
